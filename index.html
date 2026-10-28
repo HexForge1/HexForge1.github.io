@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdulaziz Hakimov — Full-Stack Developer</title>
+  <meta name="description" content="Abdulaziz Hakimov — full-stack developer from Tashkent. Python, Node.js, React, PostgreSQL. Builder of Vezora, Anime Wear and a restaurant QR ordering platform.">
+  <meta name="theme-color" content="#06080d">
+  <meta name="author" content="Abdulaziz Hakimov">
+  <link rel="canonical" href="https://hexforge1.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Abdulaziz Hakimov — Full-Stack Developer">
+  <meta property="og:description" content="Python · Node.js · React · PostgreSQL. I build complete web products end to end.">
+  <meta property="og:url" content="https://hexforge1.github.io/">
+  <meta property="og:image" content="https://hexforge1.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdulaziz Hakimov",
+    "jobTitle": "Full-Stack Developer",
+    "email": "mailto:abdulazizhakimov2009@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Tashkent", "addressCountry": "UZ" },
+    "alumniOf": "Tashkent State University of Economics",
+    "knowsAbout": ["Python", "Node.js", "Express", "React", "PostgreSQL", "Prisma", "Socket.io", "REST API", "JWT"],
+    "sameAs": ["https://github.com/HexForge1"]
+  }
+  </script>
+</head>
+<body>
+  <canvas id="hexfield" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo" aria-label="Abdulaziz Hakimov — home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><polygon points="32,4 56,18 56,46 32,60 8,46 8,18"/></svg>
+        <span>AH<em>.dev</em></span>
+      </a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="uz">UZ</button>
+          <button type="button" data-lang="ru">RU</button>
+        </div>
+        <a href="#contact" class="btn btn-sm btn-accent" data-i18n="nav.hire">Hire me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <div class="status reveal">
+            <span class="pulse" aria-hidden="true"></span>
+            <span data-i18n="hero.status">Open to new opportunities</span>
+          </div>
+
+          <p class="code-line reveal"><span class="k">const</span> developer = {</p>
+          <h1 class="name" aria-label="Abdulaziz Hakimov">
+            <span class="first split" aria-hidden="true">Abdulaziz</span>
+            <span class="last split" aria-hidden="true">Hakimov</span>
+          </h1>
+
+          <p class="role reveal">
+            <span data-i18n="hero.role">Full-stack developer</span>
+            <span class="role-sep">//</span>
+            <span class="rotator" aria-hidden="true"><span id="rotator-text"></span><span class="caret"></span></span>
+          </p>
+
+          <p class="lead reveal" data-i18n="hero.lead">I build complete web products end to end — from database design and APIs to real-time features and the interface. Python first, with Node.js, React and PostgreSQL.</p>
+
+          <div class="ctas reveal">
+            <a href="#projects" class="btn btn-accent">
+              <span data-i18n="hero.cta1">See my work</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="assets/Abdulaziz_Hakimov_CV.pdf" class="btn btn-ghost" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              <span data-i18n="hero.cta2">Download CV</span>
+            </a>
+            <div class="socials">
+              <a href="https://github.com/HexForge1" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              </a>
+              <a href="mailto:abdulazizhakimov2009@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              </a>
+              <a href="tel:+998999440409" aria-label="Phone">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="code-line close reveal">};</p>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait">
+            <svg class="hex-ring" viewBox="0 0 200 200" aria-hidden="true">
+              <defs>
+                <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#3ee6c4"/>
+                  <stop offset="1" stop-color="#7c9cff"/>
+                </linearGradient>
+              </defs>
+              <polygon class="ring-base" points="100,4 183.1,52 183.1,148 100,196 16.9,148 16.9,52"/>
+              <polygon class="ring-run" points="100,4 183.1,52 183.1,148 100,196 16.9,148 16.9,52"/>
+            </svg>
+            <div class="photo">
+              <picture>
+                <source srcset="assets/photo.webp" type="image/webp">
+                <img src="assets/photo.jpg" alt="Portrait of Abdulaziz Hakimov" width="640" height="640">
+              </picture>
+            </div>
+            <span class="orb o1">Python</span>
+            <span class="orb o2">Node.js</span>
+            <span class="orb o3">React</span>
+            <span class="orb o4">PostgreSQL</span>
+            <span class="orb o5">Socket.io</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap hero-foot">
+        <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+        <div class="clock mono">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Tashkent, UZ</span>
+          <span class="dot">·</span>
+          <span id="clock">--:--</span>
+          <span class="muted" data-i18n="hero.local">local time</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Python</span><i>⬡</i><span>Node.js</span><i>⬡</i><span>Express</span><i>⬡</i><span>React</span><i>⬡</i><span>PostgreSQL</span><i>⬡</i><span>Prisma ORM</span><i>⬡</i><span>Socket.io</span><i>⬡</i><span>REST API</span><i>⬡</i><span>JWT</span><i>⬡</i><span>Vite</span><i>⬡</i><span>i18n</span><i>⬡</i>
+        <span>Python</span><i>⬡</i><span>Node.js</span><i>⬡</i><span>Express</span><i>⬡</i><span>React</span><i>⬡</i><span>PostgreSQL</span><i>⬡</i><span>Prisma ORM</span><i>⬡</i><span>Socket.io</span><i>⬡</i><span>REST API</span><i>⬡</i><span>JWT</span><i>⬡</i><span>Vite</span><i>⬡</i><span>i18n</span><i>⬡</i>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="num">01</span>
+          <h2 data-i18n="about.title">Profile</h2>
+          <span class="line"></span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="big reveal" data-i18n="about.text1">Full-stack developer with Python as my main language, also working with Node.js, Express, React and PostgreSQL.</p>
+            <p class="reveal" data-i18n="about.text2">I take products from an empty repo to production: schema, API, auth, real-time and UI. An economics background helps me design products with a clear business and monetization model.</p>
+
+            <div class="stats">
+              <div class="stat card reveal"><b data-count="3">0</b><span data-i18n="stat.built">products built</span></div>
+              <div class="stat card reveal"><b data-count="2">0</b><span data-i18n="stat.live">live in production</span></div>
+              <div class="stat card reveal"><b>E2E</b><span data-i18n="stat.e2e">database → API → UI</span></div>
+              <div class="stat card reveal"><b>B2</b><span data-i18n="stat.english">English (CEFR)</span></div>
+            </div>
+          </div>
+
+          <div class="terminal reveal" id="terminal">
+            <div class="term-bar">
+              <i></i><i></i><i></i>
+              <span class="mono">abdulaziz@hexforge: ~</span>
+              <span class="term-hint mono" data-i18n="term.hint">interactive — type help</span>
+            </div>
+            <div class="term-body" id="term-body" aria-live="polite">
+              <div id="term-out"></div>
+              <label class="term-line">
+                <span class="prompt">➜ <b>~</b></span>
+                <input id="term-in" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="num">02</span>
+          <h2 data-i18n="projects.title">Projects</h2>
+          <span class="line"></span>
+        </div>
+        <p class="section-sub reveal" data-i18n="projects.sub">Real products, built from scratch.</p>
+
+        <!-- Vezora -->
+        <article class="project">
+          <div class="p-visual reveal">
+            <div class="mock browser card" data-mock="chat">
+              <div class="bar"><i></i><i></i><i></i><span class="url mono">vezora.uz/chat</span></div>
+              <div class="chat">
+                <div class="chat-head">
+                  <span class="avatar">D</span>
+                  <div class="who"><b>Dilnoza</b><small><span class="on"></span>Designer · online</small></div>
+                  <span class="role-tag mono">employer ⇄ worker</span>
+                </div>
+                <div class="chat-body">
+                  <div class="msg in" style="--d:0">Hi! I need a logo for my coffee shop.</div>
+                  <div class="msg out" style="--d:1">Sure — 3 days, fixed price. Here's my portfolio.</div>
+                  <div class="msg in" style="--d:2">Perfect. Message me at <span class="redact"><span class="raw">+998 90 123 45 67</span><span class="masked">•••• •• ••• •• ••</span></span></div>
+                  <div class="guard" style="--d:3">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v6c0 4.5 3 7.8 7 9 4-1.2 7-4.5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+                    <span>Contact hidden · the deal stays on Vezora</span>
+                  </div>
+                </div>
+                <div class="chat-input"><span>Type a message…</span><b></b></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-meta reveal">
+              <span class="p-num mono">/01</span>
+              <span class="badge live"><span class="pulse"></span><span data-i18n="status.live">Live</span></span>
+            </div>
+            <h3 class="reveal" data-i18n="p1.title">Vezora — Freelance &amp; Job Marketplace</h3>
+            <a class="p-url mono reveal" href="https://vezora.uz" target="_blank" rel="noopener">vezora.uz ↗</a>
+            <p class="reveal" data-i18n="p1.desc">Multi-category platform connecting clients with specialists: design, programming, SMM, repair and more.</p>
+            <ul class="bullets reveal">
+              <li data-i18n="p1.b1">Separate employer and worker roles with role-based access.</li>
+              <li data-i18n="p1.b2">Real-time chat that automatically blocks phone numbers and messenger contacts to keep deals on the platform.</li>
+              <li data-i18n="p1.b3">JWT authentication; commission and premium-plan monetization model.</li>
+            </ul>
+            <div class="tags reveal"><span>Node.js</span><span>PostgreSQL</span><span>Prisma</span><span>React</span><span>Socket.io</span><span>JWT</span></div>
+            <a class="btn btn-ghost btn-sm reveal" href="https://vezora.uz" target="_blank" rel="noopener"><span data-i18n="visit">Visit site</span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Anime Wear -->
+        <article class="project flip">
+          <div class="p-visual reveal">
+            <div class="mock browser card" data-mock="shop">
+              <div class="bar"><i></i><i></i><i></i><span class="url mono">animewear.duckdns.org</span></div>
+              <div class="shop">
+                <div class="shop-top"><b>ANIME<em>WEAR</em></b><span class="cart mono">cart · 2</span></div>
+                <div class="shop-grid">
+                  <div class="item"><div class="art a1"><span>鬼</span></div><b>Oni Hoodie</b><small>$49</small></div>
+                  <div class="item"><div class="art a2"><span>狐</span></div><b>Kitsune Tee</b><small>$29</small></div>
+                  <div class="item"><div class="art a3"><span>侍</span></div><b>Ronin Cap</b><small>$24</small></div>
+                </div>
+                <div class="flow">
+                  <div class="flow-line"><span class="packet"></span></div>
+                  <div class="flow-steps mono">
+                    <span>order</span><span>payment</span><span>supplier</span><span>customer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-meta reveal">
+              <span class="p-num mono">/02</span>
+              <span class="badge live"><span class="pulse"></span><span data-i18n="status.live">Live</span></span>
+            </div>
+            <h3 class="reveal" data-i18n="p2.title">Anime Wear — Anime Clothing Store</h3>
+            <a class="p-url mono reveal" href="https://animewear.duckdns.org" target="_blank" rel="noopener">animewear.duckdns.org ↗</a>
+            <p class="reveal" data-i18n="p2.desc">An online store for anime streetwear and accessories for a global audience — built from scratch, no CMS.</p>
+            <ul class="bullets reveal">
+              <li data-i18n="p2.b1">Custom product catalog and checkout.</li>
+              <li data-i18n="p2.b2">Dropshipping flow in progress: order and payment on the site, automatic forwarding to a supplier, direct delivery to the customer.</li>
+            </ul>
+            <div class="tags reveal"><span>Custom build</span><span>No CMS</span><span>E-commerce</span><span>Dropshipping</span></div>
+            <a class="btn btn-ghost btn-sm reveal" href="https://animewear.duckdns.org" target="_blank" rel="noopener"><span data-i18n="visit">Visit site</span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Restaurant -->
+        <article class="project">
+          <div class="p-visual reveal">
+            <div class="mock browser card" data-mock="resto">
+              <div class="bar"><i></i><i></i><i></i><span class="url mono">restaurant / floor-plan</span></div>
+              <div class="resto">
+                <div class="floor" id="floor">
+                  <span class="t r" data-s="free">T1</span>
+                  <span class="t" data-s="busy">T2</span>
+                  <span class="t r" data-s="booked">T3</span>
+                  <span class="t wide" data-s="free">T4</span>
+                  <span class="t r" data-s="busy">T5</span>
+                  <span class="t" data-s="free">T6</span>
+                  <span class="t r" data-s="free">T7</span>
+                  <span class="t" data-s="booked">T8</span>
+                </div>
+                <div class="side">
+                  <div class="qr-box">
+                    <svg id="qr" viewBox="0 0 25 25" aria-hidden="true"></svg>
+                    <small class="mono">table 4 · scan</small>
+                  </div>
+                  <ul class="menu mono">
+                    <li><span>Plov</span><b>45 000</b></li>
+                    <li><span>Lagman</span><b>38 000</b></li>
+                    <li><span>Somsa</span><b>12 000</b></li>
+                  </ul>
+                  <div class="legend mono"><span class="free">free</span><span class="busy">busy</span><span class="booked">booked</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-info">
+            <div class="p-meta reveal">
+              <span class="p-num mono">/03</span>
+              <span class="badge wip"><span data-i18n="status.wip">Nearly complete</span></span>
+            </div>
+            <h3 class="reveal" data-i18n="p3.title">Restaurant QR Ordering &amp; Table Booking</h3>
+            <span class="p-url mono reveal muted">web app · QR ordering · booking</span>
+            <p class="reveal" data-i18n="p3.desc">A web app that lets restaurant guests order and book a table without waiting for a waiter.</p>
+            <ul class="bullets reveal">
+              <li data-i18n="p3.b1">Digital menu with prices; a QR code on every table for instant ordering.</li>
+              <li data-i18n="p3.b2">Timed online booking with a live map of free and busy tables; layout customizable per restaurant.</li>
+            </ul>
+            <div class="tags reveal"><span>Web app</span><span>QR</span><span>Real-time</span><span>Booking</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="num">03</span>
+          <h2 data-i18n="stack.title">Stack &amp; education</h2>
+          <span class="line"></span>
+        </div>
+
+        <div class="bento">
+          <div class="cell card c-backend reveal">
+            <div class="cell-head"><span class="ico mono">{ }</span><h4>Backend</h4></div>
+            <div class="chips"><span class="hot">Python</span><span>Node.js</span><span>Express</span><span>REST API</span><span>JWT</span><span>Socket.io</span></div>
+            <pre class="snippet mono" aria-hidden="true"><span class="c">// real-time, authenticated</span>
+io.<span class="f">use</span>(verifyJWT);
+io.<span class="f">on</span>(<span class="s">"connection"</span>, handleChat);</pre>
+          </div>
+          <div class="cell card c-db reveal">
+            <div class="cell-head"><span class="ico mono">db</span><h4 data-i18n="stack.db">Database</h4></div>
+            <div class="chips"><span class="hot">PostgreSQL</span><span>Prisma ORM</span></div>
+            <pre class="snippet mono" aria-hidden="true"><span class="f">model</span> Deal {
+  role  Role
+  fee   Decimal
+}</pre>
+          </div>
+          <div class="cell card c-front reveal">
+            <div class="cell-head"><span class="ico mono">&lt;/&gt;</span><h4>Frontend</h4></div>
+            <div class="chips"><span class="hot">React</span><span>Vite</span><span>i18n</span><span data-i18n="stack.responsive">Responsive UI</span></div>
+          </div>
+          <div class="cell card c-other reveal">
+            <div class="cell-head"><span class="ico mono">++</span><h4 data-i18n="stack.other">Other</h4></div>
+            <div class="chips"><span data-i18n="stack.api">API integrations</span><span data-i18n="stack.rbac">Role-based access</span></div>
+          </div>
+          <div class="cell card c-lang reveal">
+            <div class="cell-head"><span class="ico mono">Aa</span><h4 data-i18n="lang.title">Languages</h4></div>
+            <div class="bar-row">
+              <div class="bar-label"><b data-i18n="lang.uz">Uzbek</b><small class="mono" data-i18n="lang.native">Native</small></div>
+              <div class="meter"><span style="--v:100%"></span></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label"><b data-i18n="lang.en">English</b><small class="mono" data-i18n="lang.b2">B2 · Upper-intermediate</small></div>
+              <div class="meter"><span style="--v:78%"></span></div>
+            </div>
+          </div>
+          <div class="cell card c-edu reveal">
+            <div class="cell-head"><span class="ico mono">edu</span><h4 data-i18n="edu.title">Education</h4></div>
+            <b class="edu-name" data-i18n="edu.name">Tashkent State University of Economics</b>
+            <span class="mono accent" data-i18n="edu.sub">TSUE · Economics</span>
+          </div>
+          <div class="cell card c-edge reveal">
+            <div class="cell-head"><span class="ico mono">$</span><h4 data-i18n="edge.title">Code × economics</h4></div>
+            <p data-i18n="edge.text">While designing the schema I'm already thinking about commissions, plans and conversion — so the product doesn't just work, it earns.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="num">04</span>
+          <h2 data-i18n="nav.contact">Contact</h2>
+          <span class="line"></span>
+        </div>
+
+        <div class="contact-card card reveal">
+          <h2 class="contact-title" data-i18n="contact.title">Let's build something real.</h2>
+          <p class="section-sub" data-i18n="contact.sub">I'm looking for my next role. Write to me — let's talk.</p>
+
+          <div class="email-row">
+            <a class="email" href="mailto:abdulazizhakimov2009@gmail.com">abdulazizhakimov2009@gmail.com</a>
+            <button type="button" class="btn btn-ghost btn-sm" id="copy-email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+              <span data-i18n="copy">Copy</span>
+            </button>
+          </div>
+
+          <div class="contact-links">
+            <a href="tel:+998999440409" class="c-link">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+              <span>+998 99 944 04 09</span>
+            </a>
+            <a href="https://github.com/HexForge1" target="_blank" rel="noopener" class="c-link">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              <span>github.com/HexForge1</span>
+            </a>
+            <span class="c-link">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              <span data-i18n="contact.loc">Tashkent, Uzbekistan</span>
+            </span>
+          </div>
+
+          <div class="ctas">
+            <a href="mailto:abdulazizhakimov2009@gmail.com" class="btn btn-accent"><span data-i18n="contact.cta">Write to me</span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a href="assets/Abdulaziz_Hakimov_CV.pdf" class="btn btn-ghost" download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg><span data-i18n="hero.cta2">Download CV</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner mono">
+      <span><span class="accent">git commit</span> -m "clean code, real products"</span>
+      <span>© <span id="year">2026</span> Abdulaziz Hakimov · <span data-i18n="footer">designed &amp; built from scratch</span></span>
+    </div>
+  </footer>
+
+  <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
